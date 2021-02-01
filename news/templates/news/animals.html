@@ -1,0 +1,45 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Animals!</title>
+
+    <script src="{% static 'js/animals.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animals.css' %}">
+
+</head>
+<body>
+<h1>It's our <span style="color: violet">Groovy (but lovable)</span> Animals</h1>
+    <div class="broadbox">
+        <div id="sliders">
+    <ul>
+        <li class="view showing">The foundation <span style="color: green">of our</span> IT</li>
+        <li class="view">Fly with us!</li>
+        <li class="view"><span style="color: red">Rasta </span><span style="color: yellow">Cat won't </span><span style="color: red">Die</span></li>
+        <li class="view"><span style="color: green">Our herb </span> <span style="color: orangered">is our leisure!</span></li>
+        <li class="view">Angelic look<span style="color: black"> - Demonic essence</span></li>
+        <li class="view"><span style="color: darkred">The rivalry will be forever!</span></li>
+        <li class="view"><span style="color: orangered">I am just neighing with you!</span></li>
+    </ul>
+    </div>
+        <div class = "scuns">
+            <h3>Our Home Scuns</h3>
+            <iframe src="{% static 'video/Home_Scuns.mp4' %}" width="400" height="300"></iframe>
+        </div>
+    </div>
+
+<!-- подключение слайдера -->
+<script src="{% static 'js/animals.js' %}"></script>
+
+
+</body>
+</html>
+
+{% endblock %}

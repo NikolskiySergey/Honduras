@@ -1,0 +1,31 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Navy!</title>
+
+    <script src="{% static 'js/navy.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/navy.css' %}">
+
+</head>
+<body>
+<h1>It's our <span style="color: violet">Heroic (not heroin)</span> Navy</h1>
+    <div class="superbox">
+
+        <div id='narco_sub'></div>
+        <div>
+            <h3>Our Sailors Life</h3>
+            <iframe src="{% static 'video/Pin_Up_in_the_Navy.mp4' %}" width="400" height="300"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

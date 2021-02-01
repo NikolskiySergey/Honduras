@@ -1,0 +1,47 @@
+/*body {*/
+/*    background: springgreen url("/static/leaves.jpg") repeat-y;*/
+/*}*/
+
+h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+	font-weight: bolder;
+     color: orangered;
+     }
+
+.mainbox {
+	background-color: deepskyblue;
+	width: 1000px;
+	height: 500px;
+	/*margin-top: -30px;*/
+	margin-left: 80px;
+	margin-right: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.listLeaders {
+	width: 100px;
+	height: 200px;
+	margin-left: 10px;
+}
+
+#revolutionaries {
+	width: 600px;
+	height: 450px;
+    background: white url("/static/image/NoPassaran.jpg") no-repeat;
+	margin-top: 20px;
+}
+
+input[type="button"]{
+	/*width:60px;*/
+	/*height: 30px;*/
+	font-size: 14px;
+	background-color: green;
+	color: white;
+	margin-top: 40px;
+}

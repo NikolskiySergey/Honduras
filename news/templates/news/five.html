@@ -1,0 +1,47 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Be Lovely!</title>
+    <script src="{% static 'js/fiveLoveScript.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fiveLoveStyle.css' %}">
+</head>
+<body>
+<h1>Eat Leaves and make Love!!!</h1>
+<form>
+<div class="lovebox">
+    <div class="listAncestors">
+    <p style = "color: brown">Our Ancestors
+    <br>
+    (ancient Hondurans): </p>
+    <ul style = "color: saddlebrown">
+        <li>Adamicus</li>
+        <li>Evica</li>
+        <li>Rabbit (smoker)</li>
+        <li>Python (hidden)</li>
+
+    </ul>
+    </div>
+
+    <div id='ancestors'></div>
+
+<div>
+<input type="button" value="Our Love!" onclick="love()">
+</div>
+
+    <div>
+    <p>{{ love }}</p>
+    <p>{{ leaves}}</p>
+    </div>
+</div>
+
+</form>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/mystyle.css' %}">
+
+			<header id="head">
+				<h1>{{ article.title }}</h1>
+				<p>published: {{ article.published_date }}</p>
+			</header>
+
+            <p>{{ article.text }}</p>
+
+            <img src="{{ article.image.url }}" align = "middle">
+
+            <iframe src="{% static 'video/Honduras.mp4' %}" width="400" height="300" sandbox="allow-same-origin">
+
+            </iframe>
+{#            <video width="400" height="300" controls="controls" preload="auto">#}
+{#                <source src="{{ video.videofile.url }}" type='video/webm; codecs="vp8, vorbis"'>#}
+{#                <source src='{{ MEDIA_URL }}{{ videofile }}' type='video/webm; codecs="vp8, vorbis"'>#}
+{#            </video>#}
+
+
+
+
+
+{#            <video><a href="news/video_clip.html">Our Stupid Video</a>#}
+{#            </video>#}
+
+
+
+{#{{ videos.videofile.url }}#}
+{#mysite/videos/Killer_Pablor.webm#}
+{#<img src="news/images/Green.jpg" hspace="20" alt="picture">#}
+
+{#media/videos/Killer_Pablor.webm#}
+
+
+{#<h2>{{ article.title }}</h2>#}
+{#<h4>published: {{ article.published_date }}</h4>#}
+{#<p>{{ article.text }}</p>#}

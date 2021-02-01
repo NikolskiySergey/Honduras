@@ -1,0 +1,83 @@
+h1{
+	font-weight: bolder;
+	color: darkblue;
+	margin-left: 20px;
+}
+
+.broadbox {
+	background-color: deepskyblue;
+	width: 1200px;
+	height: 600px;
+	/*margin-top: -30px;*/
+	margin-left: 10px;
+	margin-right: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+    /*align-items: flex-start;*/
+    padding: 2px;
+}
+
+.sliders{
+    position: relative;
+    width: 680px;
+    height: 439px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+li{
+    font-weight: bold;
+}
+.view{
+    position: absolute;
+    left: 20px;
+    width: 48%;
+    height: 69%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.view{
+    font-size: 40px;
+    padding: 8px;
+    box-sizing: content-box;
+    background: #333;
+    color: dodgerblue;
+}
+
+.view:nth-of-type(1){
+    background: url("/static/photos/animals_our/7-1.jpg");
+}
+.view:nth-of-type(2){
+    background: url("/static/photos/animals_our/7-2.jpg");
+}
+.view:nth-of-type(3){
+    background: url("/static/photos/animals_our/7-3.jpg");
+}
+.view:nth-of-type(4){
+    background: url("/static/photos/animals_our/7-4.jpg");
+}
+.view:nth-of-type(5){
+    background: url("/static/photos/animals_our/7-5.jpg");
+}
+.view:nth-of-type(6){
+    background: url("/static/photos/animals_our/7-6.jpg");
+}
+.view:nth-of-type(7){
+    background: url("/static/photos/animals_our/7-7.jpg");

@@ -1,0 +1,41 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Army!</title>
+
+    <script src="{% static 'js/army.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/army.css' %}">
+
+</head>
+<body>
+<h1>It's our <span style="color: violet">uncontrollable (but Brave)</span> Army</h1>
+    <div class="mega_box">
+        <div id="slujba">
+            <img src="{% static 'photos/army_our/Bobrovka_Island.jpg' %}">
+        </div>
+
+        <div class = "shalom">
+            <h3>Our Battle song</h3>
+            <iframe src="{% static 'video/Evro_Kazaki.mp4' %}" width="400" height="300"></iframe>
+        </div>
+
+        <div id="dembel">
+            <img src="{% static 'photos/army_our/Cowboy_Terminator.jpg' %}">
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
+
+{% endblock %}

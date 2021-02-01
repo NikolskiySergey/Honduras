@@ -1,0 +1,68 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Culture is our Leaves!!!</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/fourWeekStyle.css' %}">
+</head>
+<body>
+<h1>There are holidays when we have Leaves!!!</h1>
+
+<div class="reservoir">
+    <div id="sliders">
+    <ul>
+        <li class="view showing">Internet <span style="color: green">Must</span> Die</li>
+        <li class="view"><span style="color: red">Go</span> to Mercado!</li>
+        <li class="view">Who does not buy Corn - in next <span style="color: green">life</span> Won't born</li>
+        <li class="view"><span style="color: darkblue">Our press is our leisure!</span></li>
+        <li class="view">Blow <span style="color: red">there</span> - blow <span style="color: white">here</span></li>
+        <li class="view">This music will be forever!</li>
+        <li class="view"><span style="color: white">I observe you!</span></li>
+    </ul>
+    </div>
+    <div class="text_pext">
+        <h2 style="color:indigo">IT in Honduras</h2>
+        <p>In our country, ancient traditions are sacredly honored and observed.<br>
+            Modern technical achievements also do not pass us by.
+            We invented and created our own bicycle, in our country there are several cars
+            and one plane.</p>
+        <p>But we did not stop there.<br>
+            IT is rapidly developing in Honduras !!!<br>
+            Our scientists, having chewed the leaves, are seriously engaged
+            in the development of computer technology and the creation of their
+            own cocaine processors.<br>
+            In the meantime, this process is going on (temporarily of course),
+            our experts create programs on computers already created in
+            such a yet technically weak country like the United States.</p>
+        <p>And here we are also ahead of everyone because we have a real
+            Computer Genius - our Hairless Guru!<br>
+            He dragged from the jungle some special Python, terrible and incomprehensible.
+            With his help, the Guru taught us how to turn on the computer,
+            and soon it may even learn to turn off ...</p>
+        <p>
+            And it doesn’t matter that nothing else works out so far ...<br>
+            We chew our magic leaves, drink agave juice, sunbathe in the sun
+            and hope that Knowledge will come to us!</p>
+        <p style="font-size: 16pt">
+            <span style="font-weight: bold; color: green">
+                Vivat Honduras!</span><br>
+            <span style="color: darkblue">
+                Viva Python!</span><br>
+            <span style="font-weight: bolder; color: yellow">
+            Viva Hairless !!!</span>
+        </p>
+    </div>
+</div>
+
+<!-- подключение слайдера -->
+<script src="{% static 'js/fourWeekScript.js' %}"></script>
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+	font-weight: bolder;
+     color: orangered;
+     }
+
+.mega_box {
+	background-color: deepskyblue;
+	width: 850px;
+	height: auto;
+	/*margin-top: -30px;*/
+	margin-left: 100px;
+	margin-right: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+#slujba {
+    display: block;
+	width: 680px;
+	height: 439px;
+    /*background: white url("/static/photos/army_our/Bobrovka_Island.jpg") no-repeat;*/
+	margin-top: 20px;
+}
+
+#dembel {
+    display: block;
+	width: 680px;
+	height: 439px;
+    /*background: white url("/static/photos/army_our/Cowboy_Terminator.jpg") no-repeat;*/
+	margin-top: 20px;
+}

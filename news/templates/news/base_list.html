@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base_style.css' %}">
+
+    {% block title %}<title>Honduras News</title>{% endblock %}
+
+
+</head>
+<body>
+{% block navbar %}
+<nav class="navbar">
+    <a href="one.html">Politics&Fight</a> | <a href="two.html">Nature&Health</a> |
+    <a href="three.html">History&Culture</a> | <a href="four.html">Weekdays&Holidays</a> |
+    <a href="five.html">Live&Love</a> | <a href="six.html">Happiness&Kaif</a>
+{#    <a href="/ ">Home</a>#}
+</nav>
+{% endblock %}
+
+{% block sidebar %}
+      <ul class="sidebar-nav">
+          <li><a href="{% url 'news:index' %}">Home</a></li>
+      </ul>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block pagination %}
+  {% if is_paginated %}
+      <div class="pagination">
+          <span class="page-links">
+              {% if page_obj.has_previous %}
+                  <a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">previous</a>
+              {% endif %}
+              <span class="page-current">
+                  Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+              </span>
+              {% if page_obj.has_next %}
+                  <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">next</a>
+              {% endif %}
+          </span>
+      </div>
+  {% endif %}
+{% endblock %}
+
+{% block footbar %}
+      <ul class="foot-menu">
+          <li><a href="navy.html">Our famous NAVY</a></li>
+          <li><a href="army.html">Our combat ARMY</a></li>
+          <li><a href="airforce.html">Our Air Force</a></li>
+          <li><a href="animals.html">Our Animals</a></li>
+          <li><a href="sport.html">Our Sport</a></li>
+          <li><a href="science.html">Our Science</a></li>
+      </ul>
+{% endblock %}
+
+
+</body>
+</html>

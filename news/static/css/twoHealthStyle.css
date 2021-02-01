@@ -1,0 +1,16 @@
+/*body {*/
+/*    background: springgreen url("/static/leaves.jpg") repeat-y;*/
+/*}*/
+
+body>h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+     font-weight: bolder;
+     color: blueviolet;
+     /*line-height: 50%;*/
+     }
+
+body>h2{
+     color: red;
+}

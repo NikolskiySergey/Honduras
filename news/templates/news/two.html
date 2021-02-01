@@ -1,0 +1,59 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Our Nature!</title>
+
+{#    <script src="{% static 'js/twoHealthScript.js' %}"></script>#}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/twoHealthStyle.css' %}">
+    <!-- подключение стилей слайдера -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sim-slider-styles.css' %}">
+</head>
+<body>
+<h1>Our Health in our Nature (and Leaves)!!!</h1>
+<h2>In this photos is all our Dreams!</h2>
+<div class="sim-slider">
+     <ul class="sim-slider-list">
+{#        <div class="sim-slider-element"><img src="{% static '/photos/beauty/11-4.jpg' %}" width="600" height="500" alt=""></div>#}
+        <li><img src="{% static '/photos/beauty/no-image.gif' %}" alt="screen"></li> <!-- это экран -->
+        <li class="sim-slider-element"><img src="{% static '/photos/beauty/11-4.jpg' %}" alt="0"></li>
+        <li class="sim-slider-element"><img src="{% static '/photos/beauty/11-32.jpg' %}" alt="1"></li>
+        <li class="sim-slider-element"><img src="{% static '/photos/beauty/11-33.jpg' %}" alt="2"></li>
+        <li class="sim-slider-element"><img src="{% static '/photos/beauty/11-34.jpg' %}" alt="3"></li>
+        <li class="sim-slider-element"><img src="{% static '/photos/beauty/11-38.jpg' %}" alt="4"></li>
+     </ul>
+    <div class="sim-slider-arrow-left"></div>
+    <div class="sim-slider-arrow-right"></div>
+    <div class="sim-slider-dots"></div>
+</div>
+
+<!-- подключение слайдера -->
+<script src="{% static 'js/sim-slider.js' %}"></script>
+
+<!-- вызов слайдера -->
+<script>new Sim()</script>
+</body>
+</html>
+
+{% endblock %}
+
+{#  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>#}
+{#  <link rel="stylesheet" type="text/css" href="slick/slick_theme.css"/>#}
+
+{#<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>#}
+{#  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>#}
+{#  <script type="text/javascript" src="slick/slick_min.js"></script>#}
+{##}
+{#  <script type="text/javascript">#}
+{#      $('.nature_photo').slick();#}
+    {#$(document).ready(function(){#}
+    {#  $('.nature_photo').slick({'nature': 'photo'});#}
+{#    });#}
+{#  </script>#}

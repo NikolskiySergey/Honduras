@@ -1,0 +1,36 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Airforce!</title>
+
+    <script src="{% static 'js/airforce.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/airforce.css' %}">
+
+</head>
+<body>
+<h1>It's our <span style="color: green">flying at the same time in all directions</span> Airforce</h1>
+    <div class="air_box">
+        <div id="clean_sky">
+            <img src="{% static 'image/Air_Force_Honduras.jpg' %}">
+        </div>
+
+        <div class = "start">
+            <h3>Our Wings song</h3>
+            <iframe src="{% static 'video/A_tiNe_Ljotchik.mp4' %}" width="400" height="300"></iframe>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
+
+{% endblock %}

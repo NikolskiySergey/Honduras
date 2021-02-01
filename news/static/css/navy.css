@@ -1,0 +1,27 @@
+h1{
+	font-weight: bolder;
+	color: darkblue;
+	margin-left: 20px;
+}
+
+.superbox {
+	background-color: deepskyblue;
+	width: 1200px;
+	height: 500px;
+	/*margin-top: -30px;*/
+	margin-left: 10px;
+	margin-right: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+#narco_sub{
+    width: 695px;
+	height: 467px;
+    background: white url("/static/image/SuperNavy.jpg") no-repeat;
+	margin-top: 20px;
+	margin-left: 20px;
+}

@@ -1,0 +1,68 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+{% load static %}
+<script src="{% static 'js/script.js' %}"></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+<header id="capit">
+    {% if 1 == 1 %}
+        <h1>Honduras Today - Honduras Sjuday</h1>
+        <p>Hello, Dear Friends!<br>
+        We are pleased to welcome you in our news portal "Honduras Today - Honduras Sjuday".<br>
+        We always have the latest news for you.</p>
+    {% endif %}
+
+</header>
+
+<main>
+
+<div class="bigbox">
+    <div class="anketa">
+        <h3 style="color: red; font-style: italic">Full on our Form</h3>
+        <form method="POST">
+            {% csrf_token %}
+
+            <table class="meeting">
+                {{ form }}
+            </table>
+            <input id="anal" style="background: orangered; color: antiquewhit;
+            font-style: italic" type="submit" value="Analize">
+        </form>
+    </div>
+
+{% if latest_article_list %}
+    <div class="container">
+
+    {% for article in latest_article_list %}
+        <div class="punkt">
+            <a href="{% url 'news:detail' article.id %}">{{ article.title }}</a>
+        </div>
+    {% endfor %}
+
+    </div>
+
+
+    <iframe src="{% static 'video/Honduras.mp4' %}" width="400" height="300" sandbox="allow-same-origin">
+
+    </iframe>
+
+    <div>
+        <input type="button" value="Surprise!" onclick="surprise()">
+    </div>
+
+    <div id='test'></div>
+
+    </div>
+{% else %}
+    <p>No news are available.</p>
+{% endif %}
+</div>
+
+
+</main>
+
+
+{% endblock %}

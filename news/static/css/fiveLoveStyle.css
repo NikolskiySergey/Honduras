@@ -1,0 +1,48 @@
+/*body {*/
+/*    background: springgreen url("/static/leaves.jpg") repeat-y;*/
+/*}*/
+
+h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+	font-weight: bolder;
+     color: mediumvioletred;
+     }
+
+.lovebox {
+	background-color: deepskyblue;
+	width: 1000px;
+	height: 500px;
+	/*margin-top: -30px;*/
+	margin-left: 80px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.listAncestors {
+	width: 100px;
+	height: 200px;
+	margin-left: 10px;
+}
+
+#ancestors {
+	width: 600px;
+    height: 460px;
+    background: white url("/static/image/AdamEvaCox-mini.jpg") no-repeat;
+	/*display: inline;*/
+}
+
+input[type="button"]{
+	/*width:60px;*/
+	/*height: 30px;*/
+	font-size: 14px;
+	background-color: green;
+	color: white;
+}
+
+
+

@@ -1,0 +1,103 @@
+/*body {*/
+/*    background: springgreen url("/static/leaves.jpg") repeat-y;*/
+/*}*/
+
+body>h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+    font-weight: bolder;
+     color: red;
+     }
+
+.receptacle{
+    width: 100%;
+    height: auto;
+   display: flex;
+	justify-content: space-between;
+    margin-top: 0px;
+}
+
+.proud_text{
+    width: 500px;
+    height: 425px;
+    overflow-y: scroll;
+    background-color: lightskyblue;
+    font-family: Verdana, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+    margin-right: 20px;
+    padding: 20px;
+}
+/*
+essential styles:
+these make the imageshow work
+*/
+.pictures{
+    position: relative;
+
+    width: 670px;
+    height: 420px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+li{
+    font-weight: bold;
+}
+
+.image{
+    position: absolute;
+    left: 20px;
+    width: 46%;
+    height: 55%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.image{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: content-box;
+    background: #333;
+    color: #fff;
+}
+
+.image:nth-of-type(1){
+    background: url("/static/photos/happy_kaif/6-1.jpg");
+}
+.image:nth-of-type(2){
+    background: url("/static/photos/happy_kaif/6-2.jpg");
+}
+.image:nth-of-type(3){
+    background: url("/static/photos/happy_kaif/6-3.jpg");
+}
+.image:nth-of-type(4){
+    background: url("/static/photos/happy_kaif/6-4.jpg");
+}
+.image:nth-of-type(5){
+    background: url("/static/photos/happy_kaif/6-5.jpg");
+}
+.image:nth-of-type(6){
+    background: url("/static/photos/happy_kaif/6-6.jpg");
+}
+.image:nth-of-type(7){
+    background: url("/static/photos/happy_kaif/6-7.jpg");
+}

@@ -1,0 +1,55 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Culture is our Leaves!!!</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/threeCultStyle.css' %}">
+</head>
+<body>
+<h1>Be Culture & Historical! No Hysterical!</h1>
+
+<div class="container">
+    <div id="slides">
+    <ul>
+        <li class="slide showing">Antiquity</li>
+        <li class="slide">Antiquity</li>
+        <li class="slide"><span style="color: green">Middle Ages</span></li>
+        <li class="slide"><span style="color: green">Middle Ages</span></li>
+        <li class="slide">Today</li>
+        <li class="slide">Today</li>
+        <li class="slide">Today</li>
+    </ul>
+    </div>
+    <div class="text">
+        <h2>Vivat Honduras!</h2>
+        <p>Our history is rich in events, both great and curious.<br>
+            Since ancient times, the tribes "Payya" lived on our earth.
+            But then they began to be replaced by the Maya tribes.
+            How does it look like the life of modern "henpecked" ...</p>
+        <p>Then other times came, and the Spaniards sailed.
+            They managed to do a lot of terrible things,
+            and we dreamed to remove Spanish nonhumans away our homeland.<br>
+            Our land coped with these monsters and spawned a new nation.
+            "Hondurans" - it sounds proud, mysterious and, most importantly, incomprehensible.</p>
+        <p>Our scientists for a long time searched for the answer to the question:
+            “How could such a miracle like us appear?”
+            So far, the cocaine leaves themselves have not given the answer.
+            Because the one who eats them is neither ordinary nor normal.<br>
+            But each of us is just "Krasava"!
+        </p>
+    </div>
+</div>
+
+<!-- подключение слайдера -->
+<script src="{% static 'js/threeCultScript.js' %}"></script>
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "news/base_list.html" %}
+
+{% block content %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Politics!</title>
+
+    <script src="{% static 'js/onePolitScript.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/onePoliticStyle.css' %}">
+
+</head>
+<body>
+<h1>We have the funniest leaders!!!</h1>
+<form>
+<div class="mainbox">
+    <div class="listLeaders">
+    <p style = "color: brown">Our Revolutionaries
+    <br>
+    (left-to-right): </p>
+    <ul style = "color: saddlebrown">
+        <li>Bacha</li>
+        <li>Cacha</li>
+        <li>Mucha (hide)</li>
+        <li>Ernesto</li>
+        <li>Kuka (hide)</li>
+        <li>Muka</li>
+        <li>Chuka</li>
+    </ul>
+    </div>
+
+    <div id='revolutionaries'></div>
+
+    <div>
+    <input type="button" value="Continue" onclick={{ drive }}>
+    </div>
+
+    <div>
+    <p>{{ drive }}</p>
+    <p>{{ happy }}</p>
+    </div>
+
+</div>
+</form>
+</body>
+</html>
+
+{% endblock %}

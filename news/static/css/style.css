@@ -1,0 +1,108 @@
+#capit{
+	width: auto;
+	height: 110px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+/*селектор прямого потомка*/
+header>h1 {
+	text-align: center;
+	background-color: yellow;
+	font-family: Arial;
+	/*font-size: 12pt;*/
+	font-weight: bold;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+
+header>p {
+	text-align: left;
+    background-color: darkblue;
+	font-family: Times;
+	color: yellow;
+	font-size: 14pt;
+	font-style: italic;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+
+.meeting {
+	width: 100px;
+}
+
+input[type="button"]{
+	/*width:60px;*/
+	/*height: 30px;*/
+	font-size: 12pt;
+	background-color: green;
+	color: white;
+}
+
+#test {
+    display: none;
+}
+
+#test.on {
+	width: 350px;
+	height: 450px;
+	background-image: url("/static/image/CrazyLama.jpg");
+    display: inline;
+}
+
+.bigbox {
+	background-color: deepskyblue;
+	width: 1200px;
+	height: auto;
+	margin-top: 70px;
+	margin-left: 20px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.anketa {
+	background: silver;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/*.anal>form>input[type="submit"] {*/
+/*	font-size: 12pt;*/
+/*	background-color: orangered;*/
+/*	color: white;*/
+/*}*/
+
+.container{
+	background-color: lightblue;
+	width: 650px;
+	height: auto;
+	/*margin-top: 70px;*/
+	margin-right: 10px;
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+
+.punkt{
+	background-color: orange;
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 10px;
+	border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+
+}
+
+.punkt> a{
+	color: mediumvioletred;
+	font-size: 12pt;
+}

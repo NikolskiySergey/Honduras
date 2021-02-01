@@ -1,0 +1,61 @@
+body {
+    background: springgreen url("/static/image/leaves_new.jpg");
+	background-repeat: repeat;
+}
+
+.navbar {
+	display: flex;
+	align-content: flex-end;
+	width: 1000px;
+	height: 35px;
+	margin-top: 20px;
+	margin-left: 250px;
+	/*margin-right: 30px;*/
+	background-color: salmon;
+	text-align: left;
+    font-family: Times;
+	color: yellow;
+	font-size: 14pt;
+}
+
+.navbar>a{
+	font-weight: bolder;
+}
+
+.sidebar-nav{
+	width: 100px;
+	height: 35px;
+	margin-left: 15px;
+	background-color: salmon;
+	font-family: Times;
+	font-weight: bolder;
+	font-size: 20px;
+	/*font-style: italic;*/
+	/*color: black;*/
+	/*text-align: left;*/
+	list-style-image: url("/static/image/icon_home.png");
+	/*list-style-type: none;*/
+}
+
+.foot-menu {
+	list-style-type: none;
+	margin: 10px;
+}
+
+.foot-menu a {
+	text-decoration: none;
+	background-color: lavender;
+	font-family: sans-serif;
+	color: #5757a0;
+	font-weight: bolder;
+	font-size: 16pt
+	display: inline-block;
+	padding: 10px 20px;
+	border-bottom: 5px solid #5757a0;
+	/*margin: 5px;*/
+
+}
+
+.foot-menu li {
+	display: inline;
+}

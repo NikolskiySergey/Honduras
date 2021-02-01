@@ -1,0 +1,99 @@
+/*body {*/
+/*    background: springgreen url("/static/leaves.jpg") repeat-y;*/
+/*}*/
+
+body>h1 {
+     font-size: 300%;
+     text-align: center;
+     font-family: Helvetica;
+     font-weight: bolder;
+     color: mediumvioletred;
+     }
+
+.container{
+    width: 100%;
+    height: auto;
+   display: flex;
+	justify-content: space-between;
+    margin-top: 0px;
+}
+
+.text{
+    width: 500px;
+    height: 425px;
+    overflow-y: scroll;
+    background-color: lightskyblue;
+    font-family: Verdana, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+    margin-right: 20px;
+    padding: 20px;
+}
+/*
+essential styles:
+these make the slideshow work
+*/
+.slides{
+    position: relative;
+
+    width: 670px;
+    height: 420px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 20px;
+    width: 46%;
+    height: 55%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: content-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background: url("/static/photos/cult_hist/3-1.jpg");
+}
+.slide:nth-of-type(2){
+    background: url("/static/photos/cult_hist/3-2.jpg");
+}
+.slide:nth-of-type(3){
+    background: url("/static/photos/cult_hist/3-3.jpg");
+}
+.slide:nth-of-type(4){
+    background: url("/static/photos/cult_hist/3-4.jpg");
+}
+.slide:nth-of-type(5){
+    background: url("/static/photos/cult_hist/3-7.jpg");
+}
+.slide:nth-of-type(6){
+    background: url("/static/photos/cult_hist/3-6.jpg");
+}
+.slide:nth-of-type(7){
+    background: url("/static/photos/cult_hist/3-5.jpg");
+}

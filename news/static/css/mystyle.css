@@ -1,0 +1,87 @@
+body {
+    background: springgreen url("/static/leaves.jpg") repeat-y;
+}
+
+#head{
+	width: auto;
+	height: 110px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+/*селектор прямого потомка*/
+header>h1 {
+	text-align: center;
+	background-color: deepskyblue;
+	font-family: Arial;
+	/*font-size: 12pt;*/
+	font-weight: bold;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+
+header>p {
+	text-align: left;
+    background-color: deepskyblue;
+	font-family: Times;
+	color: orangered;
+	font-size: 12pt;
+	font-style: italic;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+
+body>p {
+	background-color: yellow;
+	font-family: Arial;
+	font-size: 12pt;
+	color: darkblue;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 10px;
+}
+
+body>img{
+ margin-top: -200px;
+ margin-left: 120px;
+}
+
+body>video{
+ margin-left: 180px;
+}
+
+/*body>h2 {*/
+/*	text-align: center;*/
+/*    background-color: antiquewhite;*/
+/*	font-family: Arial;*/
+/*	color: darkgreen;*/
+/*	font-weight: bold;*/
+/*	margin-top: 10px;*/
+/*	margin-left: 120px;*/
+/*	margin-right: 120px;*/
+/*	padding: 10px;*/
+/*}*/
+
+/*body>h4 {*/
+/*	text-align: left;*/
+/*    background-color: deepskyblue;*/
+/*	font-family: Times;*/
+/*	color: orangered;*/
+/*	font-size: 10pt;*/
+/*	font-style: italic;*/
+/*	margin-left: 120px;*/
+/*	margin-right: 120px;*/
+/*	padding: 10px;*/
+/*}*/
+
+/*body>p {*/
+/*    background-color: yellow;*/
+/*	font-family: Arial;*/
+/*	font-size: 12pt;*/
+/*	color: darkblue;*/
+/*	margin-left: 120px;*/
+/*    margin-right: 120px;*/
+/*	padding: 10px;*/
+/*}*/
